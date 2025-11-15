@@ -21,9 +21,16 @@
   },
   "main": "./lib/main.js",
   "devDependencies": {
-    "aberlaas": "2.18.1"
+    "@tailwindcss/vite": "4.1.17",
+    "@vitejs/plugin-vue": "6.0.1",
+    "aberlaas": "2.18.1",
+    "tailwindcss": "4.1.17",
+    "vite": "7.2.2"
   },
   "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "ci": "./scripts/ci",
     "compress": "./scripts/compress",
     "lint": "./scripts/lint",
@@ -31,5 +38,11 @@
     "test": "./scripts/test",
     "test:watch": "./scripts/test-watch",
     "release": "./scripts/release"
+  },
+  "dependencies": {
+    "algoliasearch": "5.44.0",
+    "reka-ui": "2.6.0",
+    "vue": "3.5.24",
+    "vue-instantsearch": "4.22.2"
   }
 }
