@@ -12,7 +12,7 @@
   "engines": {
     "node": ">=22.18.0"
   },
-  "packageManager": "yarn@4.11.0",
+  "packageManager": "yarn@4.12.0",
   "files": [
     "lib/*.js"
   ],
@@ -21,11 +21,11 @@
   },
   "main": "./lib/main.js",
   "devDependencies": {
-    "@tailwindcss/vite": "4.1.17",
-    "@vitejs/plugin-vue": "6.0.2",
+    "@tailwindcss/vite": "4.1.18",
+    "@vitejs/plugin-vue": "6.0.3",
     "aberlaas": "2.18.1",
-    "tailwindcss": "4.1.17",
-    "vite": "7.2.4"
+    "tailwindcss": "4.1.18",
+    "vite": "7.3.0"
   },
   "scripts": {
     "dev": "vite",
@@ -40,9 +40,9 @@
     "release": "./scripts/release"
   },
   "dependencies": {
-    "algoliasearch": "5.44.0",
-    "reka-ui": "2.6.0",
-    "vue": "3.5.24",
-    "vue-instantsearch": "4.22.3"
+    "algoliasearch": "5.46.1",
+    "reka-ui": "2.6.1",
+    "vue": "3.5.26",
+    "vue-instantsearch": "4.22.6"
   }
 }
