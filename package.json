@@ -23,7 +23,7 @@
   "devDependencies": {
     "@tailwindcss/vite": "4.1.18",
     "@vitejs/plugin-vue": "6.0.3",
-    "aberlaas": "2.18.1",
+    "aberlaas": "2.19.0",
     "tailwindcss": "4.1.18",
     "vite": "7.3.0"
   },
