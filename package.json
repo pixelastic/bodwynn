@@ -40,9 +40,9 @@
     "release": "./scripts/release"
   },
   "dependencies": {
-    "algoliasearch": "5.46.3",
+    "algoliasearch": "5.47.0",
     "reka-ui": "2.7.0",
-    "vue": "3.5.26",
+    "vue": "3.5.27",
     "vue-instantsearch": "4.22.8"
   }
 }
