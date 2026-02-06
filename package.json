@@ -22,7 +22,7 @@
   "main": "./lib/main.js",
   "devDependencies": {
     "@tailwindcss/vite": "4.1.18",
-    "@vitejs/plugin-vue": "6.0.3",
+    "@vitejs/plugin-vue": "6.0.4",
     "aberlaas": "2.19.0",
     "tailwindcss": "4.1.18",
     "vite": "7.3.1"
@@ -40,9 +40,9 @@
     "release": "./scripts/release"
   },
   "dependencies": {
-    "algoliasearch": "5.47.0",
+    "algoliasearch": "5.48.0",
     "reka-ui": "2.8.0",
     "vue": "3.5.27",
-    "vue-instantsearch": "4.23.0"
+    "vue-instantsearch": "4.23.1"
   }
 }
