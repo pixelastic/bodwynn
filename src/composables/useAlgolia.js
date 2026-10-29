@@ -1,9 +1,14 @@
 import { computed, ref } from 'vue';
-import { algoliaIndexName, searchClient } from '../config/algolia';
+import liteClient from 'algoliasearch/lite';
+import config from '../config.js';
+
+const { appId, apiKey, indexName } = config.algolia;
+
+export const searchClient = liteClient(appId, apiKey);
 
 export function useAlgolia() {
-  const indexName = ref(algoliaIndexName);
-  const isConfigured = computed(() => !!indexName.value && !!searchClient);
+  const refIndexName = ref(indexName);
+  const isConfigured = computed(() => !!refIndexName.value && !!searchClient);
 
   return {
     searchClient,

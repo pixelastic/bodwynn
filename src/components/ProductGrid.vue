@@ -12,15 +12,17 @@ function openProductModal(product) {
   isModalOpen.value = true;
 }
 
-function closeProductModal() {
-  isModalOpen.value = false;
-  selectedProduct.value = null;
+function closeProductModal(isOpen) {
+  isModalOpen.value = isOpen;
+  if (!isOpen) {
+    selectedProduct.value = null;
+  }
 }
 </script>
 
 <template>
   <div class="container mx-auto px-4 py-6">
-    <!-- Grille de produits -->
+    <!-- Product grid -->
     <AisHits
       :class-names="{
         'ais-Hits': 'mb-8',
@@ -45,7 +47,7 @@ function closeProductModal() {
       }"
     />
 
-    <!-- Modale produit -->
+    <!-- Product modal -->
     <ProductModal
       v-if="selectedProduct"
       :product="selectedProduct"

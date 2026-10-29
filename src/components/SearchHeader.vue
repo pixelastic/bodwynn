@@ -13,7 +13,7 @@ import { AisSearchBox } from 'vue-instantsearch/vue3/es';
           class="h-12 w-12 flex-shrink-0 rounded-lg object-cover"
         />
 
-        <!-- Barre de recherche Algolia -->
+        <!-- Algolia search box -->
         <AisSearchBox
           placeholder="Rechercher des articles..."
           class="flex-1"

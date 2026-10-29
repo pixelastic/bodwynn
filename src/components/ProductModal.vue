@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed } from 'vue';
+import { ref, computed, watch } from 'vue';
 import {
   DialogRoot,
   DialogPortal,
@@ -27,6 +27,13 @@ const emit = defineEmits(['update:open']);
 const currentImageIndex = ref(0);
 const currentImage = computed(() => props.product?.images[currentImageIndex.value]);
 
+// Reset carousel when modal opens with a new product
+watch(() => props.open, (isOpen) => {
+  if (isOpen) {
+    currentImageIndex.value = 0;
+  }
+});
+
 const nextImage = () => {
   if (currentImageIndex.value < props.product.images.length - 1) {
     currentImageIndex.value++;
@@ -39,7 +46,7 @@ const prevImage = () => {
   }
 };
 
-// Décoder HTML entities (&#39; -> ')
+// Decode HTML entities (&#39; -> ')
 const decodedDescription = computed(() => {
   if (!props.product?.description) return '';
   const txt = document.createElement('textarea');
